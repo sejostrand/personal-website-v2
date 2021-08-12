@@ -1,0 +1,90 @@
+//Color Pallette
+$yellow: #f2b026;
+$orange: #ec7c32;
+$darkOrange: #e24d2b;
+$purple: #4c0821;
+$secondaryColor: #f2b026;
+
+.navContainer {
+  margin: 4rem 0;
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+  justify-content: flex-start;
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
+}
+
+.navLinkDarkOrange {
+  background-color: $darkOrange;
+  padding: 0.75rem 2.5rem;
+  margin: 0;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+  color: white;
+  font-size: 18px;
+
+  &:hover {
+    transform: scaleX(1.05);
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px $darkOrange;
+    color: $darkOrange;
+    background-color: white;
+  }
+  @media (max-width: 620px) {
+    margin: 0.5rem 0;
+  }
+}
+
+.navLinkOrange {
+  background-color: $orange;
+  margin: 0 1.5rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+  color: white;
+  font-size: 18px;
+
+  &:hover {
+    transform: scaleX(1.05);
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px $orange;
+    color: $orange;
+    background-color: white;
+  }
+  @media (max-width: 620px) {
+    margin: 0.5rem 0;
+  }
+}
+
+.navLinkYellow {
+  background-color: $yellow;
+  margin: 0;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+  color: white;
+  font-size: 18px;
+
+  &:hover {
+    transform: scaleX(1.05);
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px $yellow;
+    color: $yellow;
+    background-color: white;
+  }
+  @media (max-width: 620px) {
+    margin: 0.5rem 0;
+  }
+}

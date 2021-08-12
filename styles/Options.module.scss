@@ -1,0 +1,22 @@
+.optionsContainer {
+  position: absolute;
+  display: flex;
+  top: 2rem;
+  right: 0;
+}
+
+.optionsButtonL {
+  border: none;
+  background-color: white;
+  height: min-content;
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.optionsButtonR {
+  border: none;
+  background-color: white;
+  height: min-content;
+  font-size: 18px;
+  width: 10rem;
+}

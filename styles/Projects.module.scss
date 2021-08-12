@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.container {
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 48rem;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.tileContainer {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 48rem;
+  margin: 3rem 0;
+}
+
+.content1 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
