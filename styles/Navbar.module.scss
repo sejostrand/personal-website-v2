@@ -1,12 +1,7 @@
 //Color Pallette
-$yellow: #f2b026;
-$orange: #ec7c32;
-$darkOrange: #e24d2b;
-$purple: #4c0821;
-$secondaryColor: #f2b026;
+@use './Colors.module.scss';
 
 .navContainer {
-  margin: 4rem 0;
   display: flex;
 }
 
@@ -21,22 +16,23 @@ $secondaryColor: #f2b026;
 }
 
 .navLinkDarkOrange {
-  background-color: $darkOrange;
-  padding: 0.75rem 2.5rem;
+  background-color: Colors.$darkOrange;
   margin: 0;
   border-radius: 0.5rem;
-  font-weight: bold;
   transition: all 100ms ease-in-out;
   color: white;
-  font-size: 18px;
+  cursor: pointer;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
 
   &:hover {
     transform: scaleX(1.05);
   }
   &:focus {
-    box-shadow: 0 0 0 3px $darkOrange;
-    color: $darkOrange;
-    background-color: white;
+    box-shadow: 0 0 0 3px Colors.$darkOrange;
+    color: Colors.$darkOrange;
+    background-color: Colors.$background;
   }
   @media (max-width: 620px) {
     margin: 0.5rem 0;
@@ -44,22 +40,23 @@ $secondaryColor: #f2b026;
 }
 
 .navLinkOrange {
-  background-color: $orange;
+  background-color: Colors.$orange;
   margin: 0 1.5rem;
-  padding: 0.75rem 2.5rem;
   border-radius: 0.5rem;
-  font-weight: bold;
   transition: all 100ms ease-in-out;
   color: white;
-  font-size: 18px;
+  cursor: pointer;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
 
   &:hover {
     transform: scaleX(1.05);
   }
   &:focus {
-    box-shadow: 0 0 0 3px $orange;
-    color: $orange;
-    background-color: white;
+    box-shadow: 0 0 0 3px Colors.$orange;
+    color: Colors.$orange;
+    background-color: Colors.$background;
   }
   @media (max-width: 620px) {
     margin: 0.5rem 0;
@@ -67,22 +64,23 @@ $secondaryColor: #f2b026;
 }
 
 .navLinkYellow {
-  background-color: $yellow;
+  background-color: Colors.$yellow;
   margin: 0;
-  padding: 0.75rem 2.5rem;
   border-radius: 0.5rem;
-  font-weight: bold;
   transition: all 100ms ease-in-out;
   color: white;
-  font-size: 18px;
+  cursor: pointer;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
 
   &:hover {
     transform: scaleX(1.05);
   }
   &:focus {
-    box-shadow: 0 0 0 3px $yellow;
-    color: $yellow;
-    background-color: white;
+    box-shadow: 0 0 0 3px Colors.$yellow;
+    color: Colors.$yellow;
+    background-color: Colors.$background;
   }
   @media (max-width: 620px) {
     margin: 0.5rem 0;

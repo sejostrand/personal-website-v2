@@ -11,7 +11,7 @@ const Navbar = (props) => {
               onClick={() => props.setView('-100vw')}
               className={styles.navLinkDarkOrange}
             >
-              About
+              {props.language === 'english' ? 'About' : 'Acerca'}
             </button>
           </li>
           <li>
@@ -19,7 +19,7 @@ const Navbar = (props) => {
               onClick={() => props.setView('-200vw')}
               className={styles.navLinkOrange}
             >
-              Projects
+              {props.language === 'english' ? 'Projects' : 'Proyectos'}
             </button>
           </li>
           <li>
@@ -27,7 +27,7 @@ const Navbar = (props) => {
               onClick={() => props.setView('-300vw')}
               className={styles.navLinkYellow}
             >
-              Contact
+              {props.language === 'english' ? 'Contact' : 'Contacto'}
             </button>
           </li>
         </ol>

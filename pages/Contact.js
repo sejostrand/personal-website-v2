@@ -5,9 +5,9 @@ const Contact = (props) => {
   return (
     <div id='contact-slide' className={styles.page}>
       <div className={styles.container}>
-        <h1 className={styles.title}>
+        <p className={styles.sectionTitle}>
           {props.language == 'english' ? 'Say hello.' : 'Dejame un mensaje!'}
-        </h1>
+        </p>
         <form id='contact-form' className={styles.formContainer}>
           <div className={styles.labelGroup}>
             <div className={styles.itemContainer}>
@@ -28,7 +28,7 @@ const Contact = (props) => {
               {props.language == 'english' ? 'Message' : 'Mensaje'}
             </h3>
             <textarea
-              placeholder='Say hello..'
+              placeholder='Hi Sebastian,'
               type='text'
               className={styles.textArea}
             ></textarea>

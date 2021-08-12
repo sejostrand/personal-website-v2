@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from '../styles/Default.module.scss';
-import Logo from './components/Logo';
 
-const Default = () => {
+const Default = (props) => {
   return (
-    <div id='about-slide' className={styles.page}>
-      <p>What would you like to see?</p>
+    <div className={styles.page}>
+      <p className={styles.sectionTitle}>
+        {props.language == 'english'
+          ? 'What would you like to see?'
+          : 'Qué te gustaría mirar?'}
+      </p>
       <div className={styles.container}></div>
     </div>
   );

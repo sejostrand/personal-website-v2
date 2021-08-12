@@ -1,22 +1,33 @@
+@use './Colors.module.scss';
+
 .optionsContainer {
   position: absolute;
   display: flex;
   top: 2rem;
-  right: 0;
+  right: 4rem;
 }
 
 .optionsButtonL {
   border: none;
-  background-color: white;
+  background-color: Colors.$background;
   height: min-content;
   font-size: 18px;
-  margin-right: 1rem;
+  margin-right: 4rem;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .optionsButtonR {
   border: none;
-  background-color: white;
+  background-color: Colors.$background;
   height: min-content;
   font-size: 18px;
-  width: 10rem;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

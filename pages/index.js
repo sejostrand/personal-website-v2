@@ -23,16 +23,16 @@ export default function Home() {
     body.style.transform = `translateX(${view})`;
     switch (view) {
       case '0':
-        body.style.maxHeight = '4rem';
+        body.style.maxHeight = '15rem';
         break;
       case '-100vw':
-        body.style.maxHeight = '80rem';
+        body.style.maxHeight = '63rem';
         break;
       case '-200vw':
-        body.style.maxHeight = '120rem';
+        body.style.maxHeight = '130rem';
         break;
       case '-300vw':
-        body.style.maxHeight = '30rem';
+        body.style.maxHeight = '36rem';
         break;
     }
   }, [view]);
@@ -79,7 +79,7 @@ export default function Home() {
         </div>
         <div className={styles.viewContainer}>
           <div id='view' className={styles.pageContainer}>
-            <Default />
+            <Default language={language} />
             <About toContact={toContact} language={language} />
             <Projects language={language} />
             <Contact language={language} />

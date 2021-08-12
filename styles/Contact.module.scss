@@ -14,6 +14,12 @@ $purple: #4c0821;
   align-items: center;
 }
 
+.sectionTitle {
+  font-size: 2rem;
+  margin: 6rem 0 3rem 0;
+  text-align: center;
+}
+
 .title {
   font-size: 2rem;
   margin: 3rem 0;
@@ -46,7 +52,7 @@ $purple: #4c0821;
   border: 1px solid gray;
   width: 17rem;
   margin-right: 2rem;
-  padding: 3px;
+  padding: 0.3rem;
 }
 
 .textInputR {
@@ -54,7 +60,7 @@ $purple: #4c0821;
   border-radius: 5px;
   border: 1px solid gray;
   width: 17rem;
-  padding: 3px;
+  padding: 0.3rem;
 }
 
 .textArea {
@@ -62,7 +68,7 @@ $purple: #4c0821;
   width: 36rem;
   border-radius: 5px;
   border: 1px solid gray;
-  padding: 3px;
+  padding: 0.3rem;
 }
 
 .sendButton {
