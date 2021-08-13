@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 //page and components
 import Landing from '../views/Landing';
-import Default from './Default';
+import Default from '../views/Default';
 import About from '../views/About';
 import Projects from '../views/Projects';
 import Contact from '../views/Contact';

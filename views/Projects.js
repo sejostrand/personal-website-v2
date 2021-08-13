@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Projects.module.scss';
-import ProjectTile from './components/ProjectTile';
+import ProjectTile from '../components/ProjectTile';
 
 const Projects = (props) => {
   return (

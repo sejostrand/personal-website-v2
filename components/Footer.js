@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/Footer.module.scss';
+import styles from '../styles/Footer.module.scss';
 import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from 'react-icons/si';
 import { BiCopy, BiClipboard } from 'react-icons/bi';
 import { MdPhone, MdMail } from 'react-icons/md';

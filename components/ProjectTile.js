@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import styles from '../../styles/ProjectTile.module.scss';
+import styles from '../styles/ProjectTile.module.scss';
 import { SiGithub } from 'react-icons/si';
 import { BsWindow } from 'react-icons/bs';
 
