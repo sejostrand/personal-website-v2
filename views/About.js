@@ -8,16 +8,16 @@ const About = (props) => {
         <p className={styles.sectionTitle}>
           {props.language == 'english'
             ? "I'm an Industrial Engineering graduate and taught myself web development."
-            : 'Inglés hecho chileno, graduado en Ingieneria Civil Indsutrial y desarrollador web autodidacta.'}
+            : 'Inglés hecho chileno, graduado en Ingienería Civil Indsutrial y desarrollador web autodidacta.'}
         </p>
         <p className={styles.smallContent}>
           {props.language == 'english'
             ? ' I moved from the UK to Santiago, Chile when I was 14 and stayed there for 10 years. I speak fluent spanish, enjoy challenges and working with people.'
-            : 'Llegue a Santiago cuando tuve 14 años, donde me quedé hasta graduarme de la universidad Adolfo Ibáñez. Billingue en inglés y español, disfruto de los desafíos, y me encanta la naturleza.'}
+            : 'Llegué a Santiago cuando tuve 14 años, donde me quedé hasta graduarme de la universidad Adolfo Ibáñez. Billingue en inglés y español, disfruto de los desafíos, me fascina la naturaleza, y quiero seguir aprendiendo.'}
         </p>
         <p className={styles.smallContent}>
           {props.language == 'english'
-            ? 'Dev skills'
+            ? 'Web dev skills'
             : 'Technologias que he usado últimamente:'}
         </p>
         <div className={styles.skillsContainer}>

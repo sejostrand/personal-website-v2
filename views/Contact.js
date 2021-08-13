@@ -9,13 +9,13 @@ const Contact = (props) => {
     <div id='contact-slide' className={styles.page}>
       <div className={styles.container}>
         <p className={styles.sectionTitle}>
-          {props.language == 'english' ? 'Say hello.' : 'Dejame un mensaje!'}
+          {props.language == 'english' ? 'Say hello!' : 'Déjame un mensaje!'}
         </p>
         <form id='contact-form' className={styles.formContainer}>
           <div className={styles.labelGroup}>
             <div className={styles.itemContainer}>
               <h3 className={styles.label}>
-                {props.language == 'english' ? 'Email' : 'Correo Electronico'}
+                {props.language == 'english' ? 'Email' : 'Correo Electrónico'}
               </h3>
               <input className={styles.textInputL} type='text' />
             </div>

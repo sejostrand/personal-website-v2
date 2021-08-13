@@ -9,7 +9,7 @@ const Projects = (props) => {
         <p className={styles.sectionTitle}>
           {props.language == 'english'
             ? 'These are some of my projects.'
-            : 'Estos son algunos de mis proyectos.'}
+            : 'Éstos son algunos de mis proyectos.'}
         </p>
         <div className={styles.tileContainer}>
           <ProjectTile
