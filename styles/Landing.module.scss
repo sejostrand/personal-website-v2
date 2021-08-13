@@ -1,9 +1,8 @@
 .name {
   display: flex;
   font-size: 4rem;
-  margin-top: 8rem;
-  margin-bottom: 0;
   cursor: pointer;
+  margin: 8rem 1rem 0rem 1rem;
 
   &:hover {
     opacity: 0.8;
@@ -15,9 +14,10 @@
   color: rgba(0, 0, 0, 0.8);
   font-weight: normal;
   cursor: default;
+  margin: 0 1rem;
 }
 
 .greeting {
   font-size: 1.5rem;
-  margin: 3rem 0;
+  margin: 3rem 1rem;
 }
