@@ -23,6 +23,7 @@ const Navbar = (props) => {
             </button>
           </li>
           <li>
+            {' '}
             <button
               onClick={() => props.setView('-300vw')}
               className={styles.navLinkYellow}

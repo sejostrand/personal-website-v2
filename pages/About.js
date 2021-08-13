@@ -10,14 +10,14 @@ const About = (props) => {
             ? "I'm an Industrial Engineering graduate and taught myself web development."
             : 'Inglés hecho chileno, graduado en Ingieneria Civil Indsutrial y desarrollador web autodidacta.'}
         </p>
-        <p className={styles.content2}>
+        <p className={styles.smallContent}>
           {props.language == 'english'
             ? ' I moved from the UK to Santiago, Chile when I was 14 and stayed there for 10 years. I speak fluent spanish, enjoy challenges and working with people.'
             : 'Llegue a Santiago cuando tuve 14 años, donde me quedé hasta graduarme de la universidad Adolfo Ibáñez. Billingue en inglés y español, disfruto de los desafíos, y me encanta la naturleza.'}
         </p>
-        <p className={styles.content2}>
+        <p className={styles.smallContent}>
           {props.language == 'english'
-            ? 'Technical Skills'
+            ? 'Dev skills'
             : 'Technologias que he usado últimamente:'}
         </p>
         <div className={styles.skillsContainer}>
@@ -38,14 +38,13 @@ const About = (props) => {
           </ol>
           <ol className={styles.list}>
             <h1 className={styles.listTitle}>CSS</h1>
-            <li>SASS</li>
+            <li>Sass</li>
             <li>Styled-components</li>
             <li>TailwindCSS</li>
           </ol>
           <ol className={styles.list}>
             <h1 className={styles.listTitle}>Tools</h1>
             <li>Git</li>
-            <li>SQL</li>
             <li>Strapi.js (cms)</li>
             <li>Postman</li>
           </ol>
@@ -69,9 +68,10 @@ const About = (props) => {
             <li>Vercel</li>
           </ol>
           <ol className={styles.list}>
-            <h1 className={styles.listTitle}>DBs</h1>
+            <h1 className={styles.listTitle}>DB</h1>
             <li>MongoDB</li>
             <li>PostgreSQL</li>
+            <li>SQL</li>
           </ol>
         </div>
       </div>

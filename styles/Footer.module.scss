@@ -36,6 +36,39 @@
   cursor: pointer;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
+}
+
+.copyButton {
+  position: relative;
+
+  &:hover .copyCaption {
+    transform: translate(-0, -1.5rem) scale(1);
+  }
+  &:focus .copyCaption {
+    opacity: 0.7;
+  }
+  &:active .copyCaption {
+    transform: translate(-0, -1.5rem) scale(0.7);
+  }
+}
+
+.copyCaption {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: Colors.$purple;
+  color: white;
+  padding: 2px 3px 1px 3px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  transform: translate(-0.4rem, -1.5rem) scale(0);
+  justify-content: center;
+  transition: all 100ms ease-in-out;
+}
+
+.clip {
+  color: white;
+  margin-right: 2px;
 }

@@ -33,6 +33,10 @@ $purple: #4c0821;
 .labelGroup {
   display: flex;
   margin-bottom: 1rem;
+
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
 }
 
 .itemContainer {
@@ -44,6 +48,7 @@ $purple: #4c0821;
 .label {
   font-size: 1rem;
   font-weight: normal;
+  margin-bottom: 2px;
 }
 
 .textInputL {
@@ -52,7 +57,10 @@ $purple: #4c0821;
   border: 1px solid gray;
   width: 17rem;
   margin-right: 2rem;
-  padding: 0.3rem;
+  padding: 0.4rem;
+  @media (max-width: 620px) {
+    width: 100%;
+  }
 }
 
 .textInputR {
@@ -60,20 +68,23 @@ $purple: #4c0821;
   border-radius: 5px;
   border: 1px solid gray;
   width: 17rem;
-  padding: 0.3rem;
+  padding: 0.4rem;
+  @media (max-width: 620px) {
+    width: 100%;
+  }
 }
 
 .textArea {
   font-size: 1.2rem;
-  width: 36rem;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid gray;
-  padding: 0.3rem;
+  padding: 0.4rem;
 }
 
 .sendButton {
   padding: 0.75rem 2.5rem;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
   border: 1px solid black;
   border-radius: 0.5rem;
   font-weight: normal;
@@ -85,4 +96,38 @@ $purple: #4c0821;
   &:hover {
     transform: scaleX(1.05);
   }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
+}
+
+.col {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  cursor: default;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active .icon {
+    transform: scale(0.8);
+  }
+}
+
+.icon {
+  margin-left: 0.5rem;
+  cursor: pointer;
 }

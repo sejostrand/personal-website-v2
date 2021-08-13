@@ -13,40 +13,64 @@ const Projects = (props) => {
         </p>
         <div className={styles.tileContainer}>
           <ProjectTile
+            language={props.language}
             bodyId='yacht'
             label='Yachtdrop'
             imageURL='/yachtdrop.jpg'
-            texts={[
-              'Helooo dsfhdfkj hskjfh skjfhsf kjshf sdkjf',
+            pills={['React.js', 'Styled-components', 'Strapi']}
+            textsEnglish={[
+              'Ecommerce platform for yacht provisioning',
+              'Features include:<br>- User registration<br> -Cart',
+            ]}
+            textsSpanish={[
+              'Pagina de web para una agencia de publicidad.',
               'dskjh oidjf ksj slihf slkjhs f',
             ]}
           />
           <ProjectTile
+            language={props.language}
             bodyId='comp'
             label='La Compañía'
             imageURL='/la-compania.jpg'
-            texts={[
+            pills={['Next.js', 'Styled-components', 'Strapi']}
+            textsEnglish={[
               'Helooo dsfhdfkj hskjfh skjfhsf kjshf sdkjf',
+              'dskjh oidjf ksj slihf slkjhs f',
+            ]}
+            textsSpanish={[
+              'Pagina de web para una agencia de publicidad.',
               'dskjh oidjf ksj slihf slkjhs f',
             ]}
           />
           <ProjectTile
+            language={props.language}
             bodyId='person0'
             link='https://sejostrand.github.io/personal-website/'
             label='Personal Website v.0'
             imageURL='/website-v0.jpg'
-            texts={[
+            pills={['React.js', 'TailwindCSS']}
+            textsEnglish={[
               'Helooo dsfhdfkj hskjfh skjfhsf kjshf sdkjf',
+              'dskjh oidjf ksj slihf slkjhs f',
+            ]}
+            textsSpanish={[
+              'Pagina de web para una agencia de publicidad.',
               'dskjh oidjf ksj slihf slkjhs f',
             ]}
           />
           <ProjectTile
+            language={props.language}
             bodyId='person1'
             link=''
             label='Personal Website v.1'
             imageURL='/screenshot.jpg'
-            texts={[
+            pills={['Next.js', 'TailwindCSS']}
+            textsEnglish={[
               'Helooo dsfhdfkj hskjfh skjfhsf kjshf sdkjf',
+              'dskjh oidjf ksj slihf slkjhs f',
+            ]}
+            textsSpanish={[
+              'Pagina de web para una agencia de publicidad.',
               'dskjh oidjf ksj slihf slkjhs f',
             ]}
           />

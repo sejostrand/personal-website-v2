@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from '../styles/Contact.module.scss';
+import { BiCopy, BiClipboard } from 'react-icons/bi';
+import { MdPhone, MdMail } from 'react-icons/md';
+import copy from 'copy-to-clipboard';
 
 const Contact = (props) => {
   return (
@@ -33,11 +36,28 @@ const Contact = (props) => {
               className={styles.textArea}
             ></textarea>
           </div>
-          <div className=''>
+          <div className={styles.row}>
             <button type='submit' className={styles.sendButton}>
               {props.language == 'english' ? 'Send' : 'Enviar'}
             </button>
-            <div className={styles.linkContainer}></div>
+            <div className={styles.linkContainer}>
+              <div className={styles.col}>
+                <a
+                  onClick={() => copy('sejostrand@gmail.com')}
+                  className={styles.detailRow}
+                >
+                  sejostrand@gmail.com
+                  <BiCopy className={styles.icon} />
+                </a>
+                <a
+                  onClick={() => copy('+447434902711')}
+                  className={styles.detailRow}
+                >
+                  + (44) 7434 902 711
+                  <BiCopy className={styles.icon} />
+                </a>
+              </div>
+            </div>
           </div>
         </form>
       </div>

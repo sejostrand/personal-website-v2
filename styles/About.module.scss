@@ -1,8 +1,7 @@
 .page {
   display: flex;
-  flex-direction: column;
   width: 100vw;
-  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -12,27 +11,15 @@
   align-items: center;
 }
 
-.title {
-  display: flex;
-  font-size: 3rem;
-  margin: 3rem 0;
-}
-
 .sectionTitle {
   font-size: 2rem;
   margin: 6rem 0 3rem 0;
   text-align: center;
 }
 
-.content1 {
-  font-size: 2rem;
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.content2 {
+.smallContent {
   font-size: 1rem;
-  margin: 2rem;
+  margin: 2rem 1rem;
   text-align: left;
   opacity: 0.8;
 }

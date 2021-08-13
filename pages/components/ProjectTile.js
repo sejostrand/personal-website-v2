@@ -5,14 +5,6 @@ import { SiGithub } from 'react-icons/si';
 import { BsWindow } from 'react-icons/bs';
 
 const ProjectTile = (props) => {
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // useEffect(() => {
-  //   if (isOpen) {
-  //     document.getElementById('person0').style.maxHeight = '0';
-  //   } else document.getElementById('person0').style.maxHeight = '0';
-  // }, [isOpen]);
-
   return (
     <div className={styles.container}>
       <a href={props.link} target='_blank' className={styles.imageContainer}>
@@ -30,15 +22,18 @@ const ProjectTile = (props) => {
         </div>
         <div className={styles.contentContainer}>
           <br className={styles.space}></br>
-          {props.texts.map((text) => {
-            return <p className={styles.paragraph}>{text}</p>;
-          })}
+          {props.language == 'english' &&
+            props.textsEnglish.map((text) => {
+              return <p className={styles.paragraph}>{text}</p>;
+            })}
+          {props.language == 'spanish' &&
+            props.textsSpanish.map((text) => {
+              return <p className={styles.paragraph}>{text}</p>;
+            })}
           <div className={styles.pillContainer}>
-            <a className={styles.pill}>Next.js</a>
-            <a className={styles.pill}>Tailwind CSS</a>
-            <a className={styles.pill}>Strapi.js</a>
-            <a className={styles.pill}>MongoDB.js</a>
-            <a className={styles.pill}>Next.js</a>
+            {props.pills.map((item) => {
+              return <a className={styles.pill}>{item}</a>;
+            })}
           </div>
         </div>
       </div>

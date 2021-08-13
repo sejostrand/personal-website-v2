@@ -19,6 +19,7 @@ export default function Home() {
   const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
+    var mq = window.matchMedia('(max-width: 620px)');
     const body = document.getElementById('view');
     body.style.transform = `translateX(${view})`;
     switch (view) {
@@ -26,13 +27,17 @@ export default function Home() {
         body.style.maxHeight = '15rem';
         break;
       case '-100vw':
-        body.style.maxHeight = '63rem';
+        mq.matches
+          ? (body.style.maxHeight = '98rem')
+          : (body.style.maxHeight = '65rem');
         break;
       case '-200vw':
-        body.style.maxHeight = '130rem';
+        body.style.maxHeight = '160rem';
         break;
       case '-300vw':
-        body.style.maxHeight = '36rem';
+        mq.matches
+          ? (body.style.maxHeight = '47rem')
+          : (body.style.maxHeight = '37rem');
         break;
     }
   }, [view]);
