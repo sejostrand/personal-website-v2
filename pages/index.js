@@ -4,14 +4,14 @@ import styles from '../styles/Home.module.scss';
 import React, { useState, useEffect } from 'react';
 
 //page and components
-import Navbar from './components/Navbar.js';
-import Options from './components/Options';
-import Landing from './Landing';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
-import Footer from './components/Footer';
+import Landing from '../views/Landing';
 import Default from './Default';
+import About from '../views/About';
+import Projects from '../views/Projects';
+import Contact from '../views/Contact';
+import Navbar from '../components/Navbar.js';
+import Options from '../components/Options';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const [view, setView] = useState('0');
