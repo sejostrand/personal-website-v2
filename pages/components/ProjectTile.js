@@ -7,7 +7,12 @@ import { BsWindow } from 'react-icons/bs';
 const ProjectTile = (props) => {
   return (
     <div className={styles.container}>
-      <a href={props.link} target='_blank' className={styles.imageContainer}>
+      <a
+        href={props.link}
+        target='_blank'
+        className={styles.imageContainer}
+        rel='noopener noreferrer'
+      >
         <Image src={props.imageURL} width='310' height='150' />
       </a>
       <div className={styles.blockContainer}>
