@@ -34,13 +34,18 @@ const Footer = (props) => {
               className={styles.icon}
             />
           </button>
-          <a href='https://github.com/sejostrand' target='_blank'>
+          <a
+            href='https://github.com/sejostrand'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <SiGithub className={styles.icon} />
           </a>
 
           <a
             href='https://www.linkedin.com/in/sebastianstrand/'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <SiLinkedin className={styles.icon} />
           </a>
