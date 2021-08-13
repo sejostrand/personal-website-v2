@@ -37,7 +37,7 @@ const Footer = (props) => {
           <a
             href='https://github.com/sejostrand'
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noreferrer'
           >
             <SiGithub className={styles.icon} />
           </a>
@@ -45,7 +45,7 @@ const Footer = (props) => {
           <a
             href='https://www.linkedin.com/in/sebastianstrand/'
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noreferrer'
           >
             <SiLinkedin className={styles.icon} />
           </a>

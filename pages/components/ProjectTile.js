@@ -11,7 +11,7 @@ const ProjectTile = (props) => {
         href={props.link}
         target='_blank'
         className={styles.imageContainer}
-        rel='noopener noreferrer'
+        rel='noreferrer'
       >
         <Image src={props.imageURL} width='310' height='150' />
       </a>
@@ -19,7 +19,7 @@ const ProjectTile = (props) => {
         <div className={styles.labelContainer}>
           <h3 className={styles.label}>{props.label}</h3>
           <div>
-            <a href={props.link} target='_blank'>
+            <a href={props.link} target='_blank' rel='noreferrer'>
               <BsWindow className={styles.icon} />
             </a>
             <SiGithub className={styles.icon} />
