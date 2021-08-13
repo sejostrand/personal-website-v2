@@ -4,9 +4,9 @@ import styles from '../../styles/Options.module.scss';
 const Options = (props) => {
   const openCV = () => {
     if (props.language == 'english') {
-      window.open('./cv-english.pdf', '_blank');
+      window.open('./cv-english.pdf', '_blank', (rel = 'noopener noreferrer'));
     } else {
-      window.open('./cv-spanish.pdf', '_blank');
+      window.open('./cv-spanish.pdf', '_blank', (rel = 'noopener noreferrer'));
     }
   };
   return (
