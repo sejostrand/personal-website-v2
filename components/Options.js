@@ -14,12 +14,12 @@ const Options = (props) => {
       <a onClick={() => openCV()} className={styles.optionsButtonL}>
         {props.language === 'english' ? 'Download CV' : 'Descargar CV'}
       </a>
-      <button
+      <a
         onClick={() => props.toggleLanguage()}
         className={styles.optionsButtonR}
       >
         {props.language == 'english' ? 'Español' : 'English'}
-      </button>
+      </a>
     </div>
   );
 };
