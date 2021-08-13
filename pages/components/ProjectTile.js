@@ -13,7 +13,12 @@ const ProjectTile = (props) => {
         className={styles.imageContainer}
         rel='noreferrer'
       >
-        <Image src={props.imageURL} width='310' height='150' />
+        <Image
+          src={props.imageURL}
+          width='310'
+          height='150'
+          alt='Website Screenshot'
+        />
       </a>
       <div className={styles.blockContainer}>
         <div className={styles.labelContainer}>
@@ -29,15 +34,27 @@ const ProjectTile = (props) => {
           <br className={styles.space}></br>
           {props.language == 'english' &&
             props.textsEnglish.map((text) => {
-              return <p className={styles.paragraph}>{text}</p>;
+              return (
+                <p key={text} className={styles.paragraph}>
+                  {text}
+                </p>
+              );
             })}
           {props.language == 'spanish' &&
             props.textsSpanish.map((text) => {
-              return <p className={styles.paragraph}>{text}</p>;
+              return (
+                <p key={text} className={styles.paragraph}>
+                  {text}
+                </p>
+              );
             })}
           <div className={styles.pillContainer}>
             {props.pills.map((item) => {
-              return <a className={styles.pill}>{item}</a>;
+              return (
+                <a key={item} className={styles.pill}>
+                  {item}
+                </a>
+              );
             })}
           </div>
         </div>
