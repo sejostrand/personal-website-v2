@@ -5,6 +5,13 @@ import { SiGithub } from 'react-icons/si';
 import { BsWindow } from 'react-icons/bs';
 
 const ProjectTile = (props) => {
+  const [isScreen, setIsScreen] = useState();
+
+  useEffect(() => {
+    var mq = window.matchMedia('(max-width: 620px)');
+    setIsScreen(mq.matches);
+  }, []);
+
   return (
     <div className={styles.container}>
       <a
@@ -15,8 +22,8 @@ const ProjectTile = (props) => {
       >
         <Image
           src={props.imageURL}
-          width='310'
-          height='150'
+          width={isScreen ? '280' : '310'}
+          height={isScreen ? '135' : '150'}
           alt='Website Screenshot'
         />
       </a>

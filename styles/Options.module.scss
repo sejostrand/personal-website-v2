@@ -5,12 +5,15 @@
   display: flex;
   top: 2rem;
   right: 4rem;
+  @media (max-width: 420px) {
+    right: none;
+    left: 3rem;
+  }
 }
 
 .optionsButtonL {
   border: none;
   background-color: Colors.$background;
-  height: min-content;
   font-size: 18px;
   margin-right: 4rem;
   cursor: pointer;
@@ -18,12 +21,15 @@
   &:hover {
     text-decoration: underline;
   }
+
+  @media (max-width: 420px) {
+    margin-right: 3rem;
+  }
 }
 
 .optionsButtonR {
   border: none;
   background-color: Colors.$background;
-  height: min-content;
   font-size: 18px;
   cursor: pointer;
 
