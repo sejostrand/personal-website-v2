@@ -68,7 +68,7 @@
     transform: scaleX(1.05);
   }
   &:focus {
-    box-shadow: 0 0 0 3px Colors.$darkOrange;
+    box-shadow: inset 0 0 0 3px Colors.$darkOrange;
     color: Colors.$darkOrange;
     background-color: Colors.$background;
   }
@@ -93,7 +93,7 @@
     transform: scaleX(1.05);
   }
   &:focus {
-    box-shadow: 0 0 0 3px Colors.$orange;
+    box-shadow: inset 0 0 0 3px Colors.$orange;
     color: Colors.$orange;
     background-color: Colors.$background;
   }
@@ -119,7 +119,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px Colors.$yellow;
+    box-shadow: inset 0 0 0 3px Colors.$yellow;
     color: Colors.$yellow;
     background-color: Colors.$background;
   }
