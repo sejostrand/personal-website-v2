@@ -7,7 +7,7 @@ const Default = (props) => {
       <p className={styles.sectionTitle}>
         {props.language == 'english'
           ? 'What would you like to see?'
-          : 'Qué te gustaría mirar?'}
+          : 'Qué te gustaría saber?'}
       </p>
       <div className={styles.container}></div>
     </div>
