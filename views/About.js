@@ -25,7 +25,7 @@ const About = (props) => {
             <h1 className={styles.listTitle}>Javascript</h1>
             <li>
               {props.language == 'english'
-                ? 'Requests & Authentication'
+                ? 'Requests & authentication'
                 : 'Solicitudes y autenticación'}
             </li>
             <li>
@@ -45,6 +45,7 @@ const About = (props) => {
           <ol className={styles.list}>
             <h1 className={styles.listTitle}>Tools</h1>
             <li>Git</li>
+            <li>SQL</li>
             <li>Strapi.js (cms)</li>
             <li>Postman</li>
           </ol>
@@ -71,7 +72,6 @@ const About = (props) => {
             <h1 className={styles.listTitle}>DB</h1>
             <li>MongoDB</li>
             <li>PostgreSQL</li>
-            <li>SQL</li>
           </ol>
         </div>
       </div>
