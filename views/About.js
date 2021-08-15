@@ -45,7 +45,7 @@ const About = (props) => {
           <ol className={styles.list}>
             <h1 className={styles.listTitle}>Tools</h1>
             <li>Git</li>
-            <li>SQL</li>
+
             <li>Strapi.js (cms)</li>
             <li>Postman</li>
           </ol>
@@ -70,6 +70,7 @@ const About = (props) => {
           </ol>
           <ol className={styles.list}>
             <h1 className={styles.listTitle}>DB</h1>
+            <li>SQL</li>
             <li>MongoDB</li>
             <li>PostgreSQL</li>
           </ol>

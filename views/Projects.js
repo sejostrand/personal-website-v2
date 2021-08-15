@@ -19,12 +19,12 @@ const Projects = (props) => {
             imageURL='/yachtdrop.jpg'
             pills={['React.js', 'Styled-components', 'Strapi']}
             textsEnglish={[
-              'Ecommerce platform for yacht provisioning',
-              'Features include:<br>- User registration<br> -Cart',
+              'Ecommerce platform for yacht provisioning.',
+              'Features include: cms for managing data, dynamic product filtering, shopping cart, user registration and authentication, favourite products, order creation and order history.',
             ]}
             textsSpanish={[
-              'Pagina de web para una agencia de publicidad.',
-              'dskjh oidjf ksj slihf slkjhs f',
+              'Plataforma provisionamiento para de yates.',
+              'Plataforma que permite usauarios registrarse, navegar productos, agregar items al carro, guardar productos en favoritos, y acceder ordenes históricos. Para la administración se cuenta con un CMS para controlar productos, pedidos y usuarios.',
             ]}
           />
           <ProjectTile
@@ -34,12 +34,12 @@ const Projects = (props) => {
             imageURL='/la-compania.jpg'
             pills={['Next.js', 'Styled-components', 'Strapi']}
             textsEnglish={[
-              'Helooo dsfhdfkj hskjfh skjfhsf kjshf sdkjf',
-              'dskjh oidjf ksj slihf slkjhs f',
+              'Website built with a CMS included for a marketing agency.',
+              'Design was provided by client.',
             ]}
             textsSpanish={[
-              'Pagina de web para una agencia de publicidad.',
-              'dskjh oidjf ksj slihf slkjhs f',
+              'Pagina de web para una agencia de publicidad, hecha según diseños del cliente.',
+              'Cuenta con un CMS para manejar el contenido en la página.',
             ]}
           />
           <ProjectTile
@@ -49,30 +49,8 @@ const Projects = (props) => {
             label='Personal Website v.0'
             imageURL='/website-v0.jpg'
             pills={['React.js', 'TailwindCSS']}
-            textsEnglish={[
-              'Helooo dsfhdfkj hskjfh skjfhsf kjshf sdkjf',
-              'dskjh oidjf ksj slihf slkjhs f',
-            ]}
-            textsSpanish={[
-              'Pagina de web para una agencia de publicidad.',
-              'dskjh oidjf ksj slihf slkjhs f',
-            ]}
-          />
-          <ProjectTile
-            language={props.language}
-            bodyId='person1'
-            link=''
-            label='Personal Website v.1'
-            imageURL='/screenshot.jpg'
-            pills={['Next.js', 'TailwindCSS']}
-            textsEnglish={[
-              'Helooo dsfhdfkj hskjfh skjfhsf kjshf sdkjf',
-              'dskjh oidjf ksj slihf slkjhs f',
-            ]}
-            textsSpanish={[
-              'Pagina de web para una agencia de publicidad.',
-              'dskjh oidjf ksj slihf slkjhs f',
-            ]}
+            textsEnglish={['First version of my personal website.']}
+            textsSpanish={['F', 'Primera versión de mi página personal.']}
           />
         </div>
       </div>

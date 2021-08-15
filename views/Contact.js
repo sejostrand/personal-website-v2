@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Contact.module.scss';
 import { BiCopy } from 'react-icons/bi';
 import copy from 'copy-to-clipboard';
 import emailjs from 'emailjs-com';
 
 const Contact = (props) => {
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [hasSent, setHasSent] = useState(false);
+
+  function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,11 +27,7 @@ const Contact = (props) => {
       )
       .then(
         (result) => {
-          window.alert(
-            props.language == 'english'
-              ? 'Message sent: ' + result.text
-              : 'Mensaje enviado: ' + result.text
-          );
+          setHasSent(true);
         },
         (error) => {
           window.alert('Error: ' + error.text);
@@ -41,12 +47,25 @@ const Contact = (props) => {
           id='contact-form'
           className={styles.formContainer}
         >
+          {hasSent && (
+            <div className={styles.messageSent}>
+              {props.language == 'english'
+                ? "I'll get back to you as soon as possible!"
+                : 'Gracias por contactarte, responderé apenas pueda!'}
+            </div>
+          )}
           <div className={styles.labelGroup}>
             <div className={styles.itemContainer}>
               <h3 className={styles.label}>
                 {props.language == 'english' ? 'Email' : 'Correo Electrónico'}
               </h3>
-              <input className={styles.textInputL} type='text' name='email' />
+              <input
+                className={styles.textInputL}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type='text'
+                name='email'
+              />
             </div>
             <div className={styles.itemContainer}>
               <h3 className={styles.label}>
@@ -71,7 +90,7 @@ const Contact = (props) => {
               type='submit'
               className={styles.sendButton}
               value='send'
-              disabled='true'
+              disabled={!validateEmail(email)}
             >
               {props.language == 'english' ? 'Send' : 'Enviar'}
             </button>
