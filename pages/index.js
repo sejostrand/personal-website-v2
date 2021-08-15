@@ -29,7 +29,7 @@ export default function Home() {
       case '-100vw':
         mq.matches
           ? (body.style.maxHeight = '101rem')
-          : (body.style.maxHeight = '65rem');
+          : (body.style.maxHeight = '62rem');
         break;
       case '-200vw':
         mq.matches
