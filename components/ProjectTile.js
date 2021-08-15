@@ -22,8 +22,8 @@ const ProjectTile = (props) => {
       >
         <Image
           src={props.imageURL}
-          width={isScreen ? '280' : '310'}
-          height={isScreen ? '135' : '150'}
+          width={isScreen ? '250' : '310'}
+          height={isScreen ? '120' : '150'}
           alt='Website Screenshot'
         />
       </a>

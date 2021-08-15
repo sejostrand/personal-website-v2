@@ -42,6 +42,9 @@ export default function Home() {
           : (body.style.maxHeight = '37rem');
         break;
     }
+    if (mq.matches) {
+      body.scrollIntoView();
+    }
   }, [view]);
 
   useEffect(() => {
