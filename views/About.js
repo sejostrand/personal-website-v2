@@ -7,7 +7,7 @@ const About = (props) => {
       <div className={styles.container}>
         <p className={styles.sectionTitle}>
           {props.language == 'english'
-            ? "I'm an Industrial Engineering graduate and taught myself web development."
+            ? "I'm an Industrial Engineering graduate and I taught myself web development."
             : 'Inglés hecho chileno, graduado en Ingienería Civil Indsutrial y desarrollador web autodidacta.'}
         </p>
         <p className={styles.smallContent}>
@@ -17,7 +17,7 @@ const About = (props) => {
         </p>
         <p className={styles.smallContent}>
           {props.language == 'english'
-            ? 'Web dev skills'
+            ? 'Skills'
             : 'Technologias que he usado últimamente:'}
         </p>
         <div className={styles.skillsContainer}>
@@ -46,7 +46,7 @@ const About = (props) => {
             <h1 className={styles.listTitle}>Tools</h1>
             <li>Git</li>
 
-            <li>Strapi.js (cms)</li>
+            <li>Strapi (headless-cms)</li>
             <li>Postman</li>
           </ol>
           <ol className={styles.list}>
@@ -71,8 +71,8 @@ const About = (props) => {
           <ol className={styles.list}>
             <h1 className={styles.listTitle}>DB</h1>
             <li>SQL</li>
-            <li>MongoDB</li>
             <li>PostgreSQL</li>
+            <li>MongoDB</li>
           </ol>
         </div>
       </div>
