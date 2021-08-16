@@ -52,7 +52,7 @@ const Contact = (props) => {
               <p className={styles.sentCaption}>
                 {props.language == 'english'
                   ? "Message sent. I'll get back to you as soon as possible!"
-                  : 'Mensaje enviado. Gracias por contactarte, responderé apenas pueda!'}
+                  : 'Mensaje enviado. Gracias por contactarse, responderé apenas pueda!'}
               </p>
             </div>
           )}
@@ -64,6 +64,9 @@ const Contact = (props) => {
               <input
                 className={styles.textInputL}
                 value={email}
+                placeholder={
+                  props.language == 'english' ? 'Your email,' : 'Su correo'
+                }
                 onChange={(e) => setEmail(e.target.value)}
                 type='text'
                 name='email'
@@ -81,7 +84,11 @@ const Contact = (props) => {
               {props.language == 'english' ? 'Message' : 'Mensaje'}
             </h3>
             <textarea
-              placeholder='Hi Sebastian,'
+              placeholder={
+                props.language == 'english'
+                  ? 'Hi Sebastian,'
+                  : 'Hola Sebastian,'
+              }
               type='text'
               name='message'
               className={styles.textArea}
