@@ -48,10 +48,12 @@ const Contact = (props) => {
           className={styles.formContainer}
         >
           {hasSent && (
-            <div className={styles.messageSent}>
-              {props.language == 'english'
-                ? "I'll get back to you as soon as possible!"
-                : 'Gracias por contactarte, responderé apenas pueda!'}
+            <div className={styles.sentContainer}>
+              <p className={styles.sentCaption}>
+                {props.language == 'english'
+                  ? "Message sent. I'll get back to you as soon as possible!"
+                  : 'Mensaje enviado. Gracias por contactarte, responderé apenas pueda!'}
+              </p>
             </div>
           )}
           <div className={styles.labelGroup}>

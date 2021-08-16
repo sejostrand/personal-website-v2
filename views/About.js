@@ -12,8 +12,8 @@ const About = (props) => {
         </p>
         <p className={styles.smallContent}>
           {props.language == 'english'
-            ? ' I moved from the UK to Santiago, Chile when I was 14 and stayed there for 10 years. I speak fluent spanish, enjoy challenges and working with people.'
-            : 'Llegué a Santiago cuando tuve 14 años, donde me quedé hasta graduarme de la universidad Adolfo Ibáñez. Billingue en inglés y español, disfruto de los desafíos, me fascina la naturaleza, y quiero seguir aprendiendo.'}
+            ? ' I moved from the UK to Santiago, Chile when I was 14 and stayed there for 10 years. I speak fluent spanish, love challenges and enjoy working with people.'
+            : 'Llegué a Santiago cuando tuve 14 años, donde me quedé hasta graduarme de la universidad Adolfo Ibáñez. Billingue en inglés y español, me encantan de los desafíos y quiero seguir aprendiendo.'}
         </p>
         <p className={styles.smallContent}>
           {props.language == 'english'
@@ -56,7 +56,7 @@ const About = (props) => {
             </li>
             <li>
               {props.language == 'english'
-                ? 'Server side rendering'
+                ? 'Dynamic rendering'
                 : 'Generación dinámica'}
             </li>
           </ol>{' '}

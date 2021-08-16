@@ -1,5 +1,29 @@
 @use './Colors.module.scss';
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  95% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -133,7 +157,7 @@
   cursor: pointer;
 }
 
-.messageSent {
+.sentContainer {
   display: flex;
   background-color: Colors.$background;
   z-index: 20;
@@ -142,5 +166,11 @@
   height: 24rem;
   justify-content: center;
   align-items: center;
-  transition: all 150ms ease-in-out;
+  animation: fadeIn 100ms 1;
+}
+
+.sentCaption {
+  animation: grow 200ms 1;
+  transition: ease-in-out;
+  margin-bottom: 1rem;
 }
