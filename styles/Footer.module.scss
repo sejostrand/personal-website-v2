@@ -20,6 +20,7 @@
   transition: all 100ms ease-in-out;
   font-size: theme.$mediumFont;
   cursor: pointer;
+  color: black;
 
   &:hover {
     transform: scaleX(1.05);
