@@ -52,7 +52,7 @@ const Contact = (props) => {
               <p className={styles.sentCaption}>
                 {props.language == 'english'
                   ? "Message sent. I'll get back to you as soon as possible!"
-                  : 'Mensaje enviado. Gracias por contactarse, responderé apenas pueda!'}
+                  : 'Mensaje enviado. Gracias por contactarte, responderé apenas pueda!'}
               </p>
             </div>
           )}
@@ -65,7 +65,7 @@ const Contact = (props) => {
                 className={styles.textInputL}
                 value={email}
                 placeholder={
-                  props.language == 'english' ? 'Your email' : 'Su correo'
+                  props.language == 'english' ? 'Your email' : 'Tu correo'
                 }
                 onChange={(e) => setEmail(e.target.value)}
                 type='text'

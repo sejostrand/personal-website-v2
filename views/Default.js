@@ -6,7 +6,7 @@ const Default = (props) => {
     <div className={styles.page}>
       <p className={styles.sectionTitle}>
         {props.language == 'english'
-          ? 'What would you like to see?'
+          ? 'What would you like to know?'
           : 'Qué te gustaría saber?'}
       </p>
       <div className={styles.container}></div>
