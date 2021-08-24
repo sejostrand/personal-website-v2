@@ -1,3 +1,5 @@
+@use './theme.module.scss';
+
 .page {
   display: flex;
   flex-direction: column;
@@ -10,17 +12,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.title {
-  font-size: 2rem;
-  margin: 3rem 0;
+  margin: 0 1rem;
 }
 
 .sectionTitle {
-  font-size: 2rem;
-  margin: 6rem 0 3rem 0;
+  font-size: theme.$largeFont;
+  margin-top: theme.$mediumSpacing;
   text-align: center;
+  transform: translateY(2rem);
 }
 
 .tileContainer {

@@ -1,4 +1,4 @@
-@use './Colors.module.scss';
+@use './theme.module.scss';
 
 @keyframes fadeIn {
   from {
@@ -39,19 +39,13 @@
 }
 
 .sectionTitle {
-  font-size: 2rem;
-  margin: 6rem 0 3rem 0;
+  font-size: theme.$largeFont;
+  margin-top: theme.$largeSpacing;
   text-align: center;
 }
 
-.title {
-  font-size: 2rem;
-  margin: 3rem 0;
-  font-weight: normal;
-}
-
 .formContainer {
-  margin-top: 2rem;
+  margin-top: theme.$mediumSpacing;
   position: relative;
 }
 
@@ -71,13 +65,15 @@
 }
 
 .label {
-  font-size: 1rem;
+  font-size: theme.$smallFont;
   font-weight: normal;
   margin-bottom: 2px;
 }
 
 .textInputL {
-  font-size: 1.2rem;
+  font-size: theme.$smallFont;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 5px;
   border: 1px solid gray;
   width: 17rem;
@@ -89,7 +85,9 @@
 }
 
 .textInputR {
-  font-size: 1.2rem;
+  font-size: theme.$smallFont;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 5px;
   border: 1px solid gray;
   width: 17rem;
@@ -100,7 +98,9 @@
 }
 
 .textArea {
-  font-size: 1.2rem;
+  font-size: theme.$smallFont;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100%;
   border-radius: 5px;
   border: 1px solid gray;
@@ -114,7 +114,7 @@
   border-radius: 0.5rem;
   font-weight: normal;
   transition: all 100ms ease-in-out;
-  font-size: 18px;
+  font-size: theme.$mediumFont;
   cursor: pointer;
   background-color: white;
 
@@ -142,6 +142,7 @@
   display: flex;
   align-items: center;
   cursor: default;
+  font-size: theme.$smallFont;
 
   &:hover {
     opacity: 0.8;
@@ -159,7 +160,7 @@
 
 .sentContainer {
   display: flex;
-  background-color: Colors.$background;
+  background-color: theme.$background;
   z-index: 20;
   position: absolute;
   width: 100%;

@@ -24,22 +24,22 @@ export default function Home() {
     body.style.transform = `translateX(${view})`;
     switch (view) {
       case '0':
-        body.style.maxHeight = '15rem';
+        body.style.maxHeight = '9rem';
         break;
       case '-100vw':
         mq.matches
           ? (body.style.maxHeight = '101rem')
-          : (body.style.maxHeight = '65rem');
+          : (body.style.maxHeight = '62rem');
         break;
       case '-200vw':
         mq.matches
-          ? (body.style.maxHeight = '120rem')
-          : (body.style.maxHeight = '100rem');
+          ? (body.style.maxHeight = '76rem')
+          : (body.style.maxHeight = '90rem');
         break;
       case '-300vw':
         mq.matches
-          ? (body.style.maxHeight = '47rem')
-          : (body.style.maxHeight = '37rem');
+          ? (body.style.maxHeight = '40rem')
+          : (body.style.maxHeight = '30rem');
         break;
     }
     if (mq.matches) {

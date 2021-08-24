@@ -1,22 +1,23 @@
-@use './Colors.module.scss';
+@use './theme.module.scss';
 
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  margin-bottom: 4rem;
+  font-size: theme.$smallFont;
+  margin-bottom: theme.$largeSpacing;
+  margin-top: theme.$largeSpacing;
 }
 
 .toTop {
   padding: 0.75rem 2.5rem;
-  margin: 4rem 0;
+  margin: theme.$smallSpacing;
   border: 1px solid black;
   border-radius: 0.5rem;
   font-weight: normal;
   transition: all 100ms ease-in-out;
-  font-size: 18px;
+  font-size: theme.$mediumFont;
   cursor: pointer;
 
   &:hover {
@@ -32,7 +33,7 @@
 .icon {
   font-size: 2rem;
   margin: 0 0.5rem;
-  color: Colors.$purple;
+  color: theme.$purple;
   cursor: pointer;
 
   &:hover {
@@ -58,7 +59,7 @@
   position: absolute;
   display: flex;
   flex-flow: row nowrap;
-  background-color: Colors.$purple;
+  background-color: theme.$purple;
   color: white;
   padding: 3px 5px 2px 4px;
   border-radius: 3px;

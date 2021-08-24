@@ -1,3 +1,5 @@
+@use './theme.module.scss';
+
 .page {
   display: flex;
   width: 100vw;
@@ -5,23 +7,30 @@
 }
 
 .container {
-  max-width: 36rem;
+  max-width: 32rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 1rem;
 }
 
 .sectionTitle {
-  font-size: 2rem;
-  margin: 6rem 0 3rem 0;
+  font-size: theme.$largeFont;
+  margin-top: theme.$largeSpacing;
   text-align: center;
 }
 
 .smallContent {
-  font-size: 1rem;
-  margin: 2rem 1rem;
+  font-size: theme.$smallFont;
+  margin-top: theme.$largeSpacing;
   text-align: left;
-  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.smallTitle {
+  font-size: theme.$largeFont;
+  margin-top: theme.$largeSpacing;
+  text-align: center;
 }
 
 .skillsContainer {
@@ -29,7 +38,7 @@
   grid-template-columns: 18rem 18rem;
   grid-template-rows: 10rem 10rem;
   margin-right: 2rem;
-  margin-bottom: 3rem;
+  margin-top: theme.$smallSpacing;
 
   @media (max-width: 620px) {
     grid-template-columns: 18rem;
@@ -40,38 +49,9 @@
   margin: 1.5rem;
   list-style: none;
   text-align: end;
+  font-size: theme.$smallFont;
 }
 
 .listTitle {
-  font-size: 3rem;
-}
-
-.contactLink {
-  padding: 0.75rem 2.5rem;
-  margin-top: 5rem;
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  font-weight: normal;
-  transition: all 100ms ease-in-out;
-  font-size: 18px;
-  cursor: pointer;
-
-  &:hover {
-    transform: scaleX(1.05);
-  }
-}
-
-.toTop {
-  padding: 0.75rem 2.5rem;
-  margin-bottom: 2rem;
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  font-weight: normal;
-  transition: all 100ms ease-in-out;
-  font-size: 18px;
-  cursor: pointer;
-
-  &:hover {
-    transform: scaleX(1.05);
-  }
+  font-size: theme.$megaFont;
 }

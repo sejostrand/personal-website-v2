@@ -10,6 +10,21 @@ const Footer = (props) => {
     <footer className={styles.footer}>
       <div>
         <div className={styles.iconContainer}>
+          <a
+            href='https://github.com/sejostrand'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <SiGithub className={styles.icon} />
+          </a>
+
+          <a
+            href='https://www.linkedin.com/in/sebastianstrand/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <SiLinkedin className={styles.icon} />
+          </a>
           <button className={styles.copyButton}>
             <div className={styles.copyCaption}>
               <span className={styles.clip}>
@@ -34,21 +49,6 @@ const Footer = (props) => {
               className={styles.icon}
             />
           </button>
-          <a
-            href='https://github.com/sejostrand'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <SiGithub className={styles.icon} />
-          </a>
-
-          <a
-            href='https://www.linkedin.com/in/sebastianstrand/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <SiLinkedin className={styles.icon} />
-          </a>
         </div>
       </div>
       <a onClick={() => props.scrollTop()} className={styles.toTop}>

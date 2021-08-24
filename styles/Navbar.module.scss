@@ -1,5 +1,5 @@
 //Color Pallette
-@use './Colors.module.scss';
+@use './theme.module.scss';
 
 @keyframes slideUp {
   0% {
@@ -39,7 +39,7 @@
 
 .navContainer {
   display: flex;
-  margin: 0 1rem;
+  margin-top: theme.$largeSpacing;
 }
 
 .navList {
@@ -53,14 +53,14 @@
 }
 
 .navLinkDarkOrange {
-  background-color: Colors.$darkOrange;
+  background-color: theme.$darkOrange;
   margin: 0;
   border-radius: 0.5rem;
   transition: all 100ms ease-in-out;
   color: white;
   cursor: pointer;
   padding: 0.7rem 2.5rem;
-  font-size: 1.2rem;
+  font-size: theme.$mediumFont;
   font-weight: normal;
   animation: slideUp 1s 1;
 
@@ -68,9 +68,9 @@
     transform: scaleX(1.05);
   }
   &:focus {
-    box-shadow: inset 0 0 0 3px Colors.$darkOrange;
-    color: Colors.$darkOrange;
-    background-color: Colors.$background;
+    box-shadow: inset 0 0 0 3px theme.$darkOrange;
+    color: theme.$darkOrange;
+    background-color: theme.$background;
   }
   @media (max-width: 620px) {
     margin: 0.5rem 0;
@@ -78,14 +78,14 @@
 }
 
 .navLinkOrange {
-  background-color: Colors.$orange;
+  background-color: theme.$orange;
   margin: 0 1.5rem;
   border-radius: 0.5rem;
   transition: all 100ms ease-in-out;
   color: white;
   cursor: pointer;
   padding: 0.7rem 2.5rem;
-  font-size: 1.2rem;
+  font-size: theme.$mediumFont;
   font-weight: normal;
   animation: slideRight1 1s 1;
 
@@ -93,9 +93,9 @@
     transform: scaleX(1.05);
   }
   &:focus {
-    box-shadow: inset 0 0 0 3px Colors.$orange;
-    color: Colors.$orange;
-    background-color: Colors.$background;
+    box-shadow: inset 0 0 0 3px theme.$orange;
+    color: theme.$orange;
+    background-color: theme.$background;
   }
   @media (max-width: 620px) {
     margin: 0.5rem 0;
@@ -103,14 +103,14 @@
 }
 
 .navLinkYellow {
-  background-color: Colors.$yellow;
+  background-color: theme.$yellow;
   margin: 0;
   border-radius: 0.5rem;
   transition: all 100ms ease-in-out;
   color: white;
   cursor: pointer;
   padding: 0.7rem 2.5rem;
-  font-size: 1.2rem;
+  font-size: theme.$mediumFont;
   font-weight: normal;
   animation: slideRight2 1s 1;
 
@@ -119,9 +119,9 @@
   }
 
   &:focus {
-    box-shadow: inset 0 0 0 3px Colors.$yellow;
-    color: Colors.$yellow;
-    background-color: Colors.$background;
+    box-shadow: inset 0 0 0 3px theme.$yellow;
+    color: theme.$yellow;
+    background-color: theme.$background;
   }
   @media (max-width: 620px) {
     margin: 0.5rem 0;

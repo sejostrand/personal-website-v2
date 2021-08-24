@@ -65,7 +65,7 @@ const Contact = (props) => {
                 className={styles.textInputL}
                 value={email}
                 placeholder={
-                  props.language == 'english' ? 'Your email,' : 'Su correo'
+                  props.language == 'english' ? 'Your email' : 'Su correo'
                 }
                 onChange={(e) => setEmail(e.target.value)}
                 type='text'
@@ -76,7 +76,14 @@ const Contact = (props) => {
               <h3 className={styles.label}>
                 {props.language == 'english' ? 'Subject' : 'Asunto'}
               </h3>
-              <input className={styles.textInputR} type='text' name='subject' />
+              <input
+                className={styles.textInputR}
+                type='text'
+                name='subject'
+                placeholder={
+                  props.language == 'english' ? "Let's chat" : 'Hablemos'
+                }
+              />
             </div>
           </div>
           <div className={styles.itemContainer}>
