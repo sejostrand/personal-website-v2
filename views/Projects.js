@@ -16,6 +16,7 @@ const Projects = (props) => {
             language={props.language}
             bodyId='yacht'
             label='Yachtdrop'
+            link='https://personal-website.nyc3.digitaloceanspaces.com/yachtdrop-demo.mp4'
             imageURL='/yachtdrop.jpg'
             pills={['React.js', 'Styled-components', 'Strapi']}
             textsEnglish={[
