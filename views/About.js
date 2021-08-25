@@ -13,12 +13,10 @@ const About = (props) => {
         <p className={styles.smallContent}>
           {props.language == 'english'
             ? ' I moved from the UK to Santiago, Chile when I was 14 and stayed there for 10 years. I speak fluent spanish, love challenges and enjoy working with people.'
-            : 'Llegué a Santiago, Chile desde Inglaterra cuando tuve 14 años, donde me quedé hasta graduarme de la Universidad Adolfo Ibáñez. Billingue en inglés y español, me encantan de los desafíos y quiero seguir aprendiendo.'}
+            : 'Llegué a Chile desde Inglaterra cuando tuve 14 años, donde me quedé hasta graduarme de la Universidad Adolfo Ibáñez. Billingue en inglés y español, me encantan de los desafíos y tengo un fuerte deseo de seguir aprendiendo.'}
         </p>
         <p className={styles.smallTitle}>
-          {props.language == 'english'
-            ? 'Skills'
-            : 'Technologias que he usado últimamente:'}
+          {props.language == 'english' ? 'Skills' : 'Habilidades de la web'}
         </p>
         <div className={styles.skillsContainer}>
           <ol className={styles.list}>

@@ -28,7 +28,7 @@ export default function Home() {
         break;
       case '-100vw':
         mq.matches
-          ? (body.style.maxHeight = language == 'english' ? '101rem' : '105rem')
+          ? (body.style.maxHeight = language == 'english' ? '110rem' : '112rem')
           : (body.style.maxHeight = language == 'english' ? '62rem' : '64rem');
         break;
       case '-200vw':
