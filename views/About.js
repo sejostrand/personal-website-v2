@@ -8,7 +8,7 @@ const About = (props) => {
         <p className={styles.sectionTitle}>
           {props.language == 'english'
             ? "I'm an Industrial Engineering graduate and I taught myself web development."
-            : 'Me dicen que soy un inglés chilenizado. Me gradué en Ingienería Civil Indsutrial y soy un desarrollador web autodidacta.'}
+            : 'Me dicen que soy un inglés chilenizado. Me gradué en Ingienería Civil Indsutrial y soy un Desarrollador Web autodidacta.'}
         </p>
         <p className={styles.smallContent}>
           {props.language == 'english'
