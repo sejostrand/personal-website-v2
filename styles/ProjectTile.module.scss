@@ -18,6 +18,20 @@
   &:hover .blockContainer {
     transform: scale(0.98);
   }
+
+  @media only screen {
+    &:active .contentContainer {
+      max-height: 1000px;
+    }
+
+    &:active .imageContainer {
+      transform: scale(1.02) translateY(-6rem);
+      box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2);
+    }
+    &:active .blockContainer {
+      transform: scale(0.98);
+    }
+  }
 }
 
 .imageContainer {
