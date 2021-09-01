@@ -24,7 +24,7 @@
 
 .tileContainer {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   max-width: 48rem;
   margin-top: 6rem;
 }

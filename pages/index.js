@@ -24,7 +24,9 @@ export default function Home() {
     body.style.transform = `translateX(${view})`;
     switch (view) {
       case '0':
-        body.style.maxHeight = '9rem';
+        mq.matches
+          ? (body.style.maxHeight = '10rem')
+          : (body.style.maxHeight = '8rem');
         break;
       case '-100vw':
         mq.matches
